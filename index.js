@@ -115,8 +115,8 @@ const translatte = async (text, opts) => {
             });
             for (const translation of body.translations) {
                 result.text += result.text
-                    ? ' ' + translation.translations.translatedText
-                    : translation.translations.translatedText;
+                    ? ' ' + translation.translatedText
+                    : translation.translatedText;
             }
         } catch (e) {
             console.error(e);
